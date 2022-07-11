@@ -2,8 +2,9 @@ import React, {useState} from 'react'
 import Sidebar from '../components/sidebar/sidebar'
 import Navbar from '../components/navbar/navbar'
 import StartSection from '../components/start-section/start-section'
+import DocSection from '../components/doc-section/doc-section'
 
-const Home = () => {
+const Main = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   const toggle = () => {
@@ -14,8 +15,9 @@ const Home = () => {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <StartSection />
+      <DocSection />
     </>
   )
 }
 
-export default Home
+export default Main
