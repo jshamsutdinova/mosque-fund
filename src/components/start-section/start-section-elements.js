@@ -57,7 +57,4 @@ export const StartH1 = styled.h1 `
     }
 `
 
-export const StartP = styled.p `
-`
-
 
