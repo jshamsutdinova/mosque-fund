@@ -10,7 +10,7 @@ var yellowColor = '#f2c14e'
 
 export const Nav = styled.nav `
     display: 'flex';
-    background: ${greenColor};
+    background: ${({ scrollNav }) => (scrollNav ? greenColor : 'transparent')};
     justify-content: center;
     align-items: center;
     font-size: 1rem; 
@@ -36,7 +36,7 @@ export const NavbarContainer = styled.div `
 `
 
 export const NavLogo = styled(LinkRouter)`
-    color: ${yellowColor};
+    color: #fff;
     justify-self: flex-start;
     cursor: pointer;
     font-size: 1.5rem;
@@ -87,7 +87,7 @@ export const NavLinks = styled(LinkScroll)`
     height: 100%;
     cursor: pointer;
 
-    :active {
+    &.active {
         border-bottom: 3px solid ${yellowColor};
     } 
 `
